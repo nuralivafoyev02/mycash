@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "@types/compression": "^1.8.1",
+    "concurrently": "^9.1.2"
+  },
+  "scripts": {
+    "dev": "npm run dev --prefix ./server",
+    "dev:client": "npm run dev --prefix ./client",
+    "dev:all": "concurrently \"npm run dev\" \"npm run dev:client\""
+  }
+}
