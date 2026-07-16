@@ -1,11 +1,9 @@
 <script setup lang="ts">
-import { useI18n } from 'vue-i18n';
 import { ref, onMounted, computed } from 'vue';
 import { useCategoryStore } from '../stores/categoryStore';
 import { useSettingsStore } from '../stores/settingsStore';
 
 const store = useCategoryStore();
-const { t } = useI18n();
 const settingsStore = useSettingsStore();
 
 const isModalOpen = ref(false);

@@ -177,7 +177,7 @@ const formatCurrency = (value: number) => {
   return new Intl.NumberFormat('ru-RU').format(value) + ' ' + settingsStore.currency;
 };
 
-const formatDate = (dateString: string) => {
+const formatDate = (dateString?: string) => {
   if (!dateString) return '-';
   return new Date(dateString).toLocaleDateString('ru-RU', { 
     year: 'numeric', month: '2-digit', day: '2-digit',

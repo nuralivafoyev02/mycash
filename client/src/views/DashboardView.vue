@@ -329,7 +329,7 @@ const series = computed(() => {
 // We need a simple ClientOnly wrapper for VueApexCharts if this is an SSR setup,
 // but since it's standard Vite Vue, we might not strictly need it. 
 // Adding a simple functional component just in case to match the template.
-import { defineComponent, h } from 'vue';
+import { defineComponent } from 'vue';
 
 export const ClientOnly = defineComponent({
   name: 'ClientOnly',

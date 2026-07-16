@@ -38,7 +38,7 @@ export const useTransactionStore = defineStore('transaction', () => {
     loading.value = true;
     error.value = null;
     try {
-      const response = await api.post('/transactions', transactionData);
+      await api.post('/transactions', transactionData);
       // Let's refetch to get the joined account name, or just push. Refetching is safer for now.
       await fetchTransactions();
       return true;

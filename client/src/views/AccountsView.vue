@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
-import { ref, onMounted, computed, onUnmounted } from 'vue';
+import { ref, onMounted, onUnmounted } from 'vue';
 import { useAccountStore } from '../stores/accountStore';
 import { useSettingsStore } from '../stores/settingsStore';
 import api from '../services/api';
